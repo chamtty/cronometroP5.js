@@ -1,0 +1,159 @@
+body {
+	margin:0;
+	padding:0;
+	overflow: hidden;
+	background-color: black;
+}
+canvas {
+	margin:auto;
+}
+
+#timer{
+	text-align: center; 
+	margin: auto;
+	padding: 0px;
+	position: relative;
+	/*background-color: red;*/
+}
+
+.hora_text{
+	/*background-color: brown;*/
+	font-family: 'Arial';
+	position: relative;
+	text-align: center;
+	padding-top: 3px;
+	display: inline-block;
+	cursor: default;
+	color: white;
+	font-size: 100pt;
+}
+
+#btnContagem{
+	margin: auto;
+	display: block;
+	cursor: pointer;
+	outline: none;
+	color: rgba(200, 187, 191, 1);
+	font-size: 15pt;
+	padding: 10px;
+	border: 2px solid;
+	border-color: rgba(37, 37, 38, 1);
+	border-radius: 5px;
+	background-color:  rgba(73, 75, 76, .2);
+}
+
+#btnZerar{
+	margin: auto;
+	display: block;
+	cursor: pointer;
+	outline: none;
+	color: rgba(200, 187, 191, 1);
+	font-size: 13pt;
+	padding: 10px 20px 10px 20px;
+	border: 2px solid;
+	border-top: none;
+	border-color: rgba(37, 37, 38, 1);
+	border-radius: 3px;
+	background-color:  rgba(73, 75, 76, .1);
+}
+
+#timer_input{
+	position: absolute;
+	background-color: red;
+	text-align: center; 
+}
+
+#opc{
+	text-align: center;
+	position: relative;
+}
+
+.radioLabel{
+	font-size: 20pt;
+	color: rgba(200, 187, 191, 1);
+	position: relative;
+	display: inline;
+	cursor: pointer;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.radioLabel input{
+	position: absolute;
+	opacity: 0;
+}
+
+.check{
+	position: flex;
+	display: inline-block;
+	top: 50%;
+	left: 50%;
+	height: 20px;
+	width: 20px;
+	rgba(117, 117, 117, 1);
+	border-radius: 50%;
+}
+
+.radioLabel:hover input ~ .check{
+	background-color: rgba(117, 117, 117, 1);
+}
+
+.radioLabel input:checked ~ .check{
+	background-color: rgba(117, 117, 117, 1);
+}
+
+.check:after {
+  content: "";
+  position: relative;
+  display: none;
+}
+
+.radioLabel input:checked ~ .check:after {
+  display: block;
+}
+
+.check:after {
+  top: 7px;
+  left: 7px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: rgba(185, 185, 185, 1);
+}
+
+#ponto{
+	position: relative;
+	font-size: 100pt;
+	font-family: 'Arial';
+	color: white;
+}
+
+.label{
+	font-family: 'Arial';
+	position: relative;
+	border: none;
+	width: 250px;
+	color: white;
+	background-color: rgba(200, 187, 191, 0);
+	outline: none; 
+	font-size: 100pt;
+	display: inline-block;
+}
+
+#timer_input_Minutos{
+	margin-right: 0px;
+	padding-right: 35px;
+	text-align: right;
+}
+
+#timer_input_Segundos{
+	margin-left: 0px;
+	padding-left: 35px;
+	text-align: left;
+}
+
+#interacao{
+	border-top: 3px solid rgba(200, 187, 191, 1);
+	border-radius: 3px;
+	text-align: center;
+}

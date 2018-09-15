@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Inicial</title>
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script src="sketch.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="central">
+		<div id="timer">
+			<div id="opc">
+				<label for="regressivo" class="radioLabel">Timer <input type="radio" name="tipo" id="regressivo" value="regressivo" class="radio" checked> <span class="check"></span></label>
+				<label for="progressivo" class="radioLabel">Cronometro <input type="radio" name="tipo" id="progressivo" value="progressivo" class="radio"> <span class="check"></span></label>
+			</div>
+			<div id="interacao">
+				<div id="temp_TextBox">
+					<input type="text" name="timer_input_Minutos" id="timer_input_Minutos" class="label" oninput="mascara(this)" onfocusout="formatarText(this)" maxlength="3" value="00">
+					<text id="ponto">:</text>
+					<input type="text" name="timer_input_Segundos" id="timer_input_Segundos" class="label" oninput="mascara(this)" onfocusout="formatarText(this)" maxlength="3" value="00">
+				</div>
+				<text id="timer_texto" class="hora_text">00: 00</text>
+				<button id='btnContagem'>Iniciar Contagem</button>
+				<button id='btnZerar'>Zerar Contagem</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
